@@ -1,0 +1,31 @@
+{
+  "name": "graphql-nodejs-api",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "babel src -d dist --source-maps",
+    "start": "nodemon src/index.js --exec babel-node",
+    "serve": "node dist/index.js",
+    "clean": "rimraf dist"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2",
+    "express-graphql": "^0.12.0",
+    "graphql": "^16.8.0",
+    "graphql-disable-introspection": "^1.2.0",
+    "graphql-tools": "^9.0.0",
+    "mongoose": "^7.5.0",
+    "rimraf": "^5.0.1"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.22.10",
+    "@babel/core": "^7.22.11",
+    "@babel/node": "^7.22.10",
+    "@babel/preset-env": "^7.22.14",
+    "nodemon": "^3.0.1"
+  }
+}
